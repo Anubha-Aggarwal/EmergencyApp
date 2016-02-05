@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SOSEmergency</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">HELP ME</string>
+    <string name="title_activity_second">second</string>
+    <string name="setting_title">"SETTINGS"</string>
+
+    <string name="location">"LOCATION"</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="add_contact">"Add Contact"</string>
+    <string name="view_contact">"View Contact"</string>
+    <string name="title_activity_add_contact">AddContact</string>
+    <string name="name">"Name"</string>
+    <string name="no">"PhoneNo"</string>
+    <string name="saveContact">"Save"</string>
+    <string name="getContact">"Get Contact"</string>
+    <string name="title_activity_view_contact">ViewContact</string>
+    <string name="message">"Message"</string>
+    <string name="delete">"Delete"</string>
+    <string name="title_activity_delete">Delete</string>
+    <string name="title_activity_message">Message</string>
+    <string name="saveMessage">"Save"</string>
+</resources>

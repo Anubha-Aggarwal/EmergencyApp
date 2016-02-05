@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="com.example.android.sosemergency.SettingsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimary"
+        android:id="@+id/set"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_button"
+        android:id="@+id/imageSettings"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="@string/setting_title"/>
+    </RelativeLayout>
+    <!-- image button add contact -->
+
+    <ImageButton
+        android:id="@+id/ib_add"
+        android:background="@color/ColorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/set"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/add_contact"
+        android:src="@drawable/add_contact"
+        android:onClick="addContact"/>
+
+    <!-- text add contact -->
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/ib_add"
+        android:layout_centerVertical="true"
+        android:text="@string/add_contact"
+        android:gravity="center"
+        android:textSize="20sp" />
+    <!-- image button view contact -->
+
+    <ImageButton
+        android:id="@+id/ib_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ib_add"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42dp"
+        android:src="@drawable/view_contact"
+        android:background="@color/ColorPrimary"
+        android:onClick="viewContact"/>
+
+    <!-- text view contact -->
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="@string/view_contact"
+        android:textSize="20sp" />
+    <!-- image button message -->
+
+    <ImageButton
+        android:id="@+id/ib_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_add"
+        android:layout_marginTop="55dp"
+        android:onClick="message"
+        android:layout_marginLeft="42dp"
+        android:background="@color/ColorPrimary"
+        android:src="@drawable/message"
+        />
+
+    <!-- text message -->
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_message"
+        android:text="@string/message"
+        android:layout_marginLeft="42dp"
+        android:textSize="20sp" />
+
+    <!-- image button email -->
+
+    <ImageButton
+        android:id="@+id/ib_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ib_message"
+        android:layout_alignLeft="@id/tv_view"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_view"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/delete"
+        android:background="@color/ColorPrimary"
+        android:contentDescription="@string/delete"
+        android:onClick="delete"/>
+
+    <!-- text email -->
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_message"
+        android:layout_alignBottom="@+id/tv_message"
+        android:layout_alignRight="@+id/ib_email"
+        android:layout_marginRight="19dp"
+        android:text="@string/delete"
+        android:textSize="20sp" />
+
+</RelativeLayout>
